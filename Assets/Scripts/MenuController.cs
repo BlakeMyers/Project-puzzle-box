@@ -30,4 +30,18 @@ public class MenuController : MonoBehaviour
         Debug.Log("Play Button Pressed");
     }
 
+    public void OptionsTest()
+    {
+        Debug.Log("Options Button Pressed");
+    }
+    public void Credits()
+    {
+        Debug.Log("We Made This");
+    }
+
+    public void ShowScores()
+    {
+        Debug.Log("This will show the highscores");
+    }
+
 }

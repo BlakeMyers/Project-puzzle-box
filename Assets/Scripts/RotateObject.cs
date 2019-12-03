@@ -8,7 +8,8 @@ public class RotateObject : MonoBehaviour
     //That way we get collisions, and can inset objects
 
     [SerializeField]
-    private float speed = 1.0f;
+    private float speed = 100.0f;
+    private Vector3 rotateVector;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,8 @@ public class RotateObject : MonoBehaviour
 
     void OnMouseDrag()
     {
-        transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * Time.deltaTime * speed);
+        rotateVector = new Vector3(Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0) * Time.deltaTime * speed;
+        rotateVector.y *= -1;
+        transform.Rotate(rotateVector);
     }
 }
