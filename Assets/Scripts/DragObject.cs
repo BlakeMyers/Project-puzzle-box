@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class DragObject : MonoBehaviour
 {
+    //Instead of using Transform use Rigidbody.MovePosition()
+    //That way we get collisions, and can inset objects
+
     [SerializeField]
     private string moveDirection = "x";
     private Vector3 point;

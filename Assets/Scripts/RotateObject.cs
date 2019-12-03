@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RotateObject : MonoBehaviour
 {
+    //Instead of using Transform use Rigidbody.MoveRotation()
+    //That way we get collisions, and can inset objects
+
     [SerializeField]
     private float speed = 1.0f;
     // Start is called before the first frame update
