@@ -18,10 +18,10 @@ public class BaseCube : MonoBehaviour
     {
 
         if(Input.GetMouseButton(1)){
-            float x = Input.GetAxit("Mouse X") * RotationSpeed;
-            float y = Input.GetAxit("Mouse Y") * RotationSpeed;
+            float x = Input.GetAxis("Mouse X") * RotationSpeed;
+            float y = Input.GetAxis("Mouse Y") * RotationSpeed;
             
-            this.transform.Rotate(x, y, 0);
+            this.transform.Rotate(y, -x, 0);
         }
     }
 }
