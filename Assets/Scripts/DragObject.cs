@@ -56,4 +56,11 @@ public class DragObject : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Goal")
+        {
+            Debug.Log("Puzzle Solved");
+        }
+    }
 }
