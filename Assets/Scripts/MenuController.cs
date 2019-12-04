@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class MenuController : MonoBehaviour
@@ -28,6 +29,7 @@ public class MenuController : MonoBehaviour
     public void PlayTest()
     {
         Debug.Log("Play Button Pressed");
+        SceneManager.LoadScene("JBargerMazeCube");
     }
 
     public void OptionsTest()
