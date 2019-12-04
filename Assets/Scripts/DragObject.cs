@@ -11,17 +11,21 @@ public class DragObject : MonoBehaviour
     private string moveDirection = "x";
     private Vector3 point;
     public Rigidbody rigidBody;
-     
+    private Vector3 rotateVector;
+    public GameObject endGoal;
+
     // Start is called before the first frame update
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody>();  
+        rigidBody = GetComponent<Rigidbody>();
+        endGoal = GameObject.Find("GoalGate");
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     void OnMouseDrag()
@@ -65,6 +69,7 @@ public class DragObject : MonoBehaviour
     {
         if(other.gameObject.tag == "Goal")
         {
+            endGoal.GetComponent<BoxCollider>().isTrigger = false;
             Debug.Log("Puzzle Solved");
         }
     }
