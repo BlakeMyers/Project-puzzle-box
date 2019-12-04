@@ -8,12 +8,13 @@ public class RotateObject : MonoBehaviour
     //That way we get collisions, and can inset objects
 
     [SerializeField]
-    private float speed = 100.0f;
+    private float speed = 500.0f;
     private Vector3 rotateVector;
+    public Rigidbody rigidBody;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rigidBody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -26,6 +27,8 @@ public class RotateObject : MonoBehaviour
     {
         rotateVector = new Vector3(Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0) * Time.deltaTime * speed;
         rotateVector.y *= -1;
-        transform.Rotate(rotateVector);
+        //transform.Rotate(rotateVector);
+        Quaternion deltaRotation = Quaternion.Euler(rotateVector);
+        rigidBody.MoveRotation(rigidBody.rotation * deltaRotation);
     }
 }

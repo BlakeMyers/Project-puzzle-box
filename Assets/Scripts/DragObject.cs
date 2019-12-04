@@ -10,10 +10,12 @@ public class DragObject : MonoBehaviour
     [SerializeField]
     private string moveDirection = "x";
     private Vector3 point;
+    public Rigidbody rigidBody;
+     
     // Start is called before the first frame update
     void Start()
     {
-
+        rigidBody = GetComponent<Rigidbody>();  
     }
 
     // Update is called once per frame
@@ -32,7 +34,8 @@ public class DragObject : MonoBehaviour
 
             point.y = transform.position.y;
             point.z = transform.position.z;
-            transform.position = point;
+            //transform.position = point;
+            rigidBody.MovePosition(point);
         }
         else if (moveDirection.Equals("y"))
         {
@@ -42,7 +45,8 @@ public class DragObject : MonoBehaviour
 
             point.x = transform.position.x;
             point.z = transform.position.z;
-            transform.position = point;
+            //transform.position = point;
+            rigidBody.MovePosition(point);
         }
         else if (moveDirection.Equals("z"))
         {
@@ -52,7 +56,8 @@ public class DragObject : MonoBehaviour
 
             point.x = transform.position.x;
             point.y = transform.position.y;
-            transform.position = point;
+            //transform.position = point;
+            rigidBody.MovePosition(point);
         }
     }
 
