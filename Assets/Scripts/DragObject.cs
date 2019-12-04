@@ -18,7 +18,7 @@ public class DragObject : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
-        endGoal = GameObject.Find("GoalGate");
+        //endGoal = GameObject.Find("GoalGate");
 
     }
 
