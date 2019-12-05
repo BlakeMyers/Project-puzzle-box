@@ -7,22 +7,24 @@ using UnityEngine.SceneManagement;
 public class UI_Controller : MonoBehaviour
 {
     // Start is called before the first frame update
-    bool pauseScreenactive = false;
+    bool pauseTime = false;
+    public GameObject MainCube;
     public GameObject pauseScreen;
     public GameObject HUD;
+    public GameObject Win_panel;
+    public Text FinishedText;
+    public Text Puzzles_text;
     public Text timeText;
     public Text HighscoreText;
     float time = 0.0f;
     float scoretime = 100.0f;
-    void Start()
-    {
+    public float puzzles_solved = 0.0f;
 
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (!pauseScreenactive)
+        if (!pauseTime)
         {
             time += Time.deltaTime;
         }
@@ -33,13 +35,19 @@ public class UI_Controller : MonoBehaviour
         {
             Pause();
         }
-
+        Puzzles_text.text = "Puzzels Solved: " + puzzles_solved.ToString("0");
         timeText.text = "Time: " + time.ToString("0.0");
         HighscoreText.text = "Best Time: " +scoretime.ToString("0.0");
         if (scoretime >= time)
             timeText.color = Color.green;
         if (scoretime < time)
             timeText.color = Color.red;
+        if (puzzles_solved > 4)
+        {
+            pauseTime = true;
+            Win_panel.SetActive(true);
+            FinishedText.text = "You Finished The Puzzles in " + time.ToString("0.0") + " Seconds";
+        }
     }
 
     public void QuitGame()
@@ -52,21 +60,25 @@ public class UI_Controller : MonoBehaviour
     }
     void Pause()
     {
-        if (!pauseScreenactive)
+        if (!pauseTime)
         {
+            MainCube.GetComponent<RotateObject>().enabled = false;
             pauseScreen.SetActive(true);
-            HUD.SetActive(false);
-            pauseScreenactive = true;
+            pauseTime = true;
         }
     }
     public void Resume()
     {
+        MainCube.GetComponent<RotateObject>().enabled = true;
         pauseScreen.SetActive(false);
-        HUD.SetActive(true);
-        pauseScreenactive = false;
+        pauseTime = false;
     }
     public void Load()
     {
         SceneManager.LoadScene(0);
+    }
+    public void ResetLevel()
+    {
+        SceneManager.LoadScene(1);
     }
 }
