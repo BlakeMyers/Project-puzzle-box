@@ -19,6 +19,7 @@ public class RotateObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if(Input.GetMouseButton(0)){
             rotateVector = new Vector3(Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0) * Time.deltaTime * speed;
             rotateVector.y *= -1;
@@ -28,13 +29,13 @@ public class RotateObject : MonoBehaviour
             //this.transform.rotation = (this.transform.rotation * deltaRotation);
         }
 
-        if(Input.GetMouseButton(1)){
+        //if(Input.){
             rotateVector = new Vector3(0, 0, Input.GetAxis("Mouse Y") - Input.GetAxis("Mouse X")) * Time.deltaTime * speed;
             rotateVector.y *= -1;
 
             transform.RotateAround(this.transform.position, rotateVector, 1 * speed);
 
             //this.transform.rotation = (this.transform.rotation * deltaRotation);
-        }
+        //}
     }
 }
