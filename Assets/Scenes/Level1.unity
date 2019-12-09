@@ -3234,7 +3234,7 @@ GameObject:
   - component: {fileID: 209811360346726137}
   - component: {fileID: 2156067096690440299}
   m_Layer: 0
-  m_Name: puzzle2
+  m_Name: Cube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
