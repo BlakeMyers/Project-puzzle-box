@@ -839,11 +839,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4730218171913789233, guid: c0ed9f392e4f24145a1977dded845276,
-        type: 3}
-      propertyPath: m_Name
-      value: AestheticCube (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4730218171913789229, guid: c0ed9f392e4f24145a1977dded845276,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -898,6 +893,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730218171913789233, guid: c0ed9f392e4f24145a1977dded845276,
+        type: 3}
+      propertyPath: m_Name
+      value: AestheticCube (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0ed9f392e4f24145a1977dded845276, type: 3}
@@ -1208,7 +1208,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8a54fdef2e657b545874d223cdbed289, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1512,11 +1512,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5839142375001971974, guid: 889ef85c2fb8a174fbc638b0ae040730,
-        type: 3}
-      propertyPath: m_Name
-      value: AestheticCube2 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 5839142375001971968, guid: 889ef85c2fb8a174fbc638b0ae040730,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1571,6 +1566,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839142375001971974, guid: 889ef85c2fb8a174fbc638b0ae040730,
+        type: 3}
+      propertyPath: m_Name
+      value: AestheticCube2 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 889ef85c2fb8a174fbc638b0ae040730, type: 3}
@@ -2269,11 +2269,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5839142375001971974, guid: 889ef85c2fb8a174fbc638b0ae040730,
-        type: 3}
-      propertyPath: m_Name
-      value: AestheticCube2 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 5839142375001971968, guid: 889ef85c2fb8a174fbc638b0ae040730,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2328,6 +2323,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839142375001971974, guid: 889ef85c2fb8a174fbc638b0ae040730,
+        type: 3}
+      propertyPath: m_Name
+      value: AestheticCube2 (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 889ef85c2fb8a174fbc638b0ae040730, type: 3}
@@ -2627,11 +2627,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5839142375001971974, guid: 889ef85c2fb8a174fbc638b0ae040730,
-        type: 3}
-      propertyPath: m_Name
-      value: AestheticCube2 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5839142375001971968, guid: 889ef85c2fb8a174fbc638b0ae040730,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2687,6 +2682,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5839142375001971974, guid: 889ef85c2fb8a174fbc638b0ae040730,
+        type: 3}
+      propertyPath: m_Name
+      value: AestheticCube2 (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 889ef85c2fb8a174fbc638b0ae040730, type: 3}
 --- !u!1001 &4730218171832520255
@@ -2696,11 +2696,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4730218171913789233, guid: c0ed9f392e4f24145a1977dded845276,
+    - target: {fileID: 1636046890447466510, guid: c0ed9f392e4f24145a1977dded845276,
         type: 3}
-      propertyPath: m_Name
-      value: AestheticCube
-      objectReference: {fileID: 0}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb01767a82d5d74449396538b6b09f25, type: 2}
+    - target: {fileID: 1636046890568162826, guid: c0ed9f392e4f24145a1977dded845276,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb01767a82d5d74449396538b6b09f25, type: 2}
+    - target: {fileID: 1636046890751464294, guid: c0ed9f392e4f24145a1977dded845276,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb01767a82d5d74449396538b6b09f25, type: 2}
+    - target: {fileID: 1636046891926826144, guid: c0ed9f392e4f24145a1977dded845276,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb01767a82d5d74449396538b6b09f25, type: 2}
+    - target: {fileID: 1636046891998059088, guid: c0ed9f392e4f24145a1977dded845276,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb01767a82d5d74449396538b6b09f25, type: 2}
     - target: {fileID: 4730218171913789229, guid: c0ed9f392e4f24145a1977dded845276,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2756,6 +2776,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4730218171913789231, guid: c0ed9f392e4f24145a1977dded845276,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8a54fdef2e657b545874d223cdbed289, type: 2}
+    - target: {fileID: 4730218171913789233, guid: c0ed9f392e4f24145a1977dded845276,
+        type: 3}
+      propertyPath: m_Name
+      value: AestheticCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 6585813611974995224, guid: c0ed9f392e4f24145a1977dded845276,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb01767a82d5d74449396538b6b09f25, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0ed9f392e4f24145a1977dded845276, type: 3}
 --- !u!1001 &5839142376149393303
@@ -2765,11 +2800,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5839142375001971974, guid: 889ef85c2fb8a174fbc638b0ae040730,
-        type: 3}
-      propertyPath: m_Name
-      value: AestheticCube2
-      objectReference: {fileID: 0}
     - target: {fileID: 5839142375001971968, guid: 889ef85c2fb8a174fbc638b0ae040730,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2824,6 +2854,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839142375001971974, guid: 889ef85c2fb8a174fbc638b0ae040730,
+        type: 3}
+      propertyPath: m_Name
+      value: AestheticCube2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 889ef85c2fb8a174fbc638b0ae040730, type: 3}
