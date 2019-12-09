@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenuAlternate.unity
     guid: 016578513d897574ea641bba0ba53b80
   - enabled: 1
+    path: Assets/Scenes/JGolden.unity
+    guid: d765a240d6064784ab9e7fc3595c3ec5
+  - enabled: 1
     path: Assets/Scenes/JBargerMazeCube.unity
     guid: 9c1d1d4555eb5314ea3f947049cb3cb6
   m_configObjects: {}
