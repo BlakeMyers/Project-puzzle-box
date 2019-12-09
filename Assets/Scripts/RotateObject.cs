@@ -29,13 +29,13 @@ public class RotateObject : MonoBehaviour
             //this.transform.rotation = (this.transform.rotation * deltaRotation);
         }
 
-        //if(Input.){
+        if(Input.GetMouseButton(0)){
             rotateVector = new Vector3(0, 0, Input.GetAxis("Mouse Y") - Input.GetAxis("Mouse X")) * Time.deltaTime * speed;
             rotateVector.y *= -1;
 
             transform.RotateAround(this.transform.position, rotateVector, 1 * speed);
 
             //this.transform.rotation = (this.transform.rotation * deltaRotation);
-        //}
+        }
     }
 }
