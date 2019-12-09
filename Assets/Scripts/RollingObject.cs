@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RollingObject : MonoBehaviour
 {
+    [SerializeField]
+    AudioSource goalSound;
+
     public Rigidbody rigidBody;
     GameObject UI_Manager;
     MeshRenderer meshRenderer1;
@@ -38,12 +41,14 @@ public class RollingObject : MonoBehaviour
     {
         if(col.gameObject.tag == "Goal")
         {
+            goalSound.Play();
             transform.position = new Vector3(0, 0, 0);
             rigidBody.isKinematic = true;
             UI_Manager.GetComponent<UI_Controller>().puzzles_solved += 0.5f;
         }
         if (col.gameObject.tag == "Goal1")
         {
+            goalSound.Play();
             Debug.Log("Cube1");
             meshRenderer1.material = meshRenderer1.materials[1];
             transform.position = new Vector3(0, 0, 0);
@@ -52,6 +57,7 @@ public class RollingObject : MonoBehaviour
         }
         if (col.gameObject.tag == "Goal2")
         {
+            goalSound.Play();
             Debug.Log("Cube2");
             meshRenderer2.material = meshRenderer2.materials[1];
             transform.position = new Vector3(0, 0, 0);
@@ -60,14 +66,18 @@ public class RollingObject : MonoBehaviour
         }
         if (col.gameObject.tag == "Goal3")
         {
-            Debug.Log("Cube3");
-            meshRenderer3.material = meshRenderer3.materials[1];
+            goalSound.Play();
+            Debug.Log("Cube2");
+            GameObject puzzle = GameObject.Find("Cube3");
+            MeshRenderer meshRenderer = puzzle.GetComponent<MeshRenderer>();
+            meshRenderer.material = meshRenderer.materials[1];
             transform.position = new Vector3(0, 0, 0);
             rigidBody.isKinematic = true;
             UI_Manager.GetComponent<UI_Controller>().puzzles_solved += 0.5f;
         }
         if (col.gameObject.tag == "Goal4")
         {
+            goalSound.Play();
             Debug.Log("Cube4");
             meshRenderer4.material = meshRenderer4.materials[1];
             transform.position = new Vector3(0, 0, 0);
@@ -76,6 +86,7 @@ public class RollingObject : MonoBehaviour
         }
         if (col.gameObject.tag == "Goal5")
         {
+            goalSound.Play();
             Debug.Log("Cube5");
             meshRenderer5.material = meshRenderer5.materials[1];
             transform.position = new Vector3(0, 0, 0);

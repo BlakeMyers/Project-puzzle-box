@@ -5,6 +5,9 @@ using UnityEngine;
 public class RotateObject : MonoBehaviour
 {
     [SerializeField]
+    AudioSource rotateNoise;
+
+    [SerializeField]
     private float speed = 5.0f;
     private Vector3 rotateVector;
     Camera cam;
@@ -21,6 +24,10 @@ public class RotateObject : MonoBehaviour
     {
 
         if(Input.GetMouseButton(0)){
+            if (rotateNoise.isPlaying == false)
+            {
+                rotateNoise.Play();
+            }
             rotateVector = new Vector3(Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0) * Time.deltaTime * speed;
             rotateVector.y *= -1;
 
@@ -30,6 +37,10 @@ public class RotateObject : MonoBehaviour
         }
 
         if(Input.GetMouseButton(1)){
+            if (rotateNoise.isPlaying == false)
+            {
+                rotateNoise.Play();
+            }
             rotateVector = new Vector3(0, 0, Input.GetAxis("Mouse Y") - Input.GetAxis("Mouse X")) * Time.deltaTime * speed;
             rotateVector.y *= -1;
 
