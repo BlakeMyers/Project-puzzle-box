@@ -4439,7 +4439,7 @@ GameObject:
   - component: {fileID: 7718390321427134624}
   - component: {fileID: 2362477002351608427}
   m_Layer: 0
-  m_Name: puzzle2
+  m_Name: Cube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
