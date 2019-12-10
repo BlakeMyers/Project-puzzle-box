@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class MenuController : MonoBehaviour
 {
+    public GameObject CreditsPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,12 +39,16 @@ public class MenuController : MonoBehaviour
     }
     public void Credits()
     {
-        Debug.Log("We Made This");
+        CreditsPanel.SetActive(true);
     }
 
     public void ShowScores()
     {
         Debug.Log("This will show the highscores");
+    }
+    public void Back() 
+    {
+        CreditsPanel.SetActive(false);    
     }
 
 }
