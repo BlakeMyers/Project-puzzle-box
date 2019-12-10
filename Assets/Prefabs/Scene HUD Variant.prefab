@@ -142,8 +142,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d15237cd670933d4bb4ec0b6379e8cb8, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -502,8 +502,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d15237cd670933d4bb4ec0b6379e8cb8, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -633,8 +633,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: dc0334215c7ff8349853857c4be20389, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -708,8 +708,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d15237cd670933d4bb4ec0b6379e8cb8, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -859,7 +859,7 @@ PrefabInstance:
     - target: {fileID: 5676739813686178107, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
         type: 3}
       propertyPath: m_Name
-      value: Scene HUD
+      value: Scene HUD Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5676739813686178111, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
         type: 3}
@@ -966,66 +966,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5676739814603281511, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -260
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676739814603281511, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676739814603281508, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
-        type: 3}
-      propertyPath: m_Text
-      value: 'Puzzles solved:'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676739812979818626, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676739814073512976, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676739814511863502, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676739814511863502, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
-        type: 3}
-      propertyPath: m_Name
-      value: Quit Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676739814511863503, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -120
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676739814454601786, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
-        type: 3}
-      propertyPath: m_Name
-      value: Resume Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676739813437190200, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
-        type: 3}
-      propertyPath: m_Text
-      value: Game Paused
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676739813725936421, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5676739813725936421, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 240
-      objectReference: {fileID: 0}
     - target: {fileID: 5676739813609883831, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1040,6 +980,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739813725936421, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739813725936421, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739814603281511, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -260
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739814603281511, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739814511863503, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739814073512976, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739814454601786, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_Name
+      value: Resume Button
       objectReference: {fileID: 0}
     - target: {fileID: 5676739814446466280, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
         type: 3}
@@ -1071,6 +1046,75 @@ PrefabInstance:
       propertyPath: FinishedText
       value: 
       objectReference: {fileID: 495617474}
+    - target: {fileID: 5676739814511863502, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739814511863502, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_Name
+      value: Quit Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739814073512982, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dc0334215c7ff8349853857c4be20389,
+        type: 3}
+    - target: {fileID: 5676739814073512982, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739814603281508, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Puzzles solved:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739814454601785, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d15237cd670933d4bb4ec0b6379e8cb8,
+        type: 3}
+    - target: {fileID: 5676739814454601785, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739814511863501, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d15237cd670933d4bb4ec0b6379e8cb8,
+        type: 3}
+    - target: {fileID: 5676739814511863501, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739813437190200, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_Text
+      value: Game Paused
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739812979818626, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676739812967316939, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d15237cd670933d4bb4ec0b6379e8cb8,
+        type: 3}
+    - target: {fileID: 5676739812967316939, guid: 8bbfb55ba840f244ab363dc3a1b0b55f,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bbfb55ba840f244ab363dc3a1b0b55f, type: 3}
 --- !u!114 &8743164856575413172 stripped
