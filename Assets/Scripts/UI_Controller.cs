@@ -87,7 +87,7 @@ public class UI_Controller : MonoBehaviour
     }
     public void ResetLevel()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneNum);
     }
     public void Nextlevel() 
     {
