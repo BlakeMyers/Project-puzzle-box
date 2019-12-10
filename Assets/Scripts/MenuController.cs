@@ -29,7 +29,7 @@ public class MenuController : MonoBehaviour
     public void PlayTest()
     {
         Debug.Log("Play Button Pressed");
-        SceneManager.LoadScene("JBargerMazeCube");
+        SceneManager.LoadScene(1);
     }
 
     public void OptionsTest()
