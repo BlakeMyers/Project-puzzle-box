@@ -11,10 +11,12 @@ public class RotateObject : MonoBehaviour
     private float speed = 5.0f;
     private Vector3 rotateVector;
     Camera cam;
+    float width, height;
     // Start is called before the first frame update
     void Start()
     {
-        
+        width = (float)Screen.width / 2.0f;
+        height = (float)Screen.height / 2.0f;
         
         cam = Camera.main;
     }
