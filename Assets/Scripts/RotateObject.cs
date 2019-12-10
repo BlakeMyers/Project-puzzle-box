@@ -24,7 +24,7 @@ public class RotateObject : MonoBehaviour
     {
 
         if(Input.GetMouseButton(0)){
-            if (rotateNoise.isPlaying == false)
+            if (rotateNoise !=null && rotateNoise.isPlaying == false)
             {
                 rotateNoise.Play();
             }
@@ -37,7 +37,7 @@ public class RotateObject : MonoBehaviour
         }
 
         if(Input.GetMouseButton(1)){
-            if (rotateNoise.isPlaying == false)
+            if (rotateNoise !=null && rotateNoise.isPlaying == false)
             {
                 rotateNoise.Play();
             }
