@@ -12,6 +12,7 @@ public class UI_Controller : MonoBehaviour
     public GameObject pauseScreen;
     public GameObject HUD;
     public GameObject Win_panel;
+    public GameObject NextButton;
     public Text FinishedText;
     public Text Puzzles_text;
     public Text timeText;
@@ -19,7 +20,12 @@ public class UI_Controller : MonoBehaviour
     float time = 0.0f;
     float scoretime = 100.0f;
     public float puzzles_solved = 0.0f;
-
+    int SceneNum;
+    private void Start()
+    {
+        SceneNum = SceneManager.GetActiveScene().buildIndex;
+        print(SceneManager.sceneCountInBuildSettings.ToString());
+    }
 
     // Update is called once per frame
     void Update()
@@ -44,6 +50,8 @@ public class UI_Controller : MonoBehaviour
             timeText.color = Color.red;
         if (puzzles_solved > 4)
         {
+            if (SceneNum < (SceneManager.sceneCountInBuildSettings - 1))
+                NextButton.SetActive(true);
             pauseTime = true;
             Win_panel.SetActive(true);
             FinishedText.text = "You Finished The Puzzles in " + time.ToString("0.0") + " Seconds";
@@ -80,5 +88,9 @@ public class UI_Controller : MonoBehaviour
     public void ResetLevel()
     {
         SceneManager.LoadScene(1);
+    }
+    public void Nextlevel() 
+    {
+        SceneManager.LoadScene(SceneNum + 1);
     }
 }
